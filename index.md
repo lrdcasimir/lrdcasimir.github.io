@@ -18,4 +18,4 @@ frequently soliciting feedback from the people I'm supporting.
 
 Outside of work and TEALS I'm a proud father with passions for music, cooking,
 hiking, and diving.
-![Chloe and I]({{ "/assets/chloe.jpg" | absolute_url }})
+![Chloe and I]({{ "/assets/IMG_0019.jpg" | absolute_url }})
