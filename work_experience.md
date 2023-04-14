@@ -4,9 +4,91 @@ layout: page
 permalink: '/experience/'
 ---
 
+## [Meta Platforms](#meta)
+
+### Production Engineer &mdash; January 2019 - Present
+
+- **Global Tetris and Disaster Recovery Lead**
+ - Landed Multi-Region Aware Analysis Pipeline, allowing for one-command DR execution 
+  of Multi-Region namespace failover and capacity automation
+ - Reduced SLO misses due to DR drills to 0 from 4 per half
+ - 53% and 78% reduction in unneeded work for Multi-Region drain and undrain
+ - Proposed, designed, implemented and built a symmetric API for DR execution,
+   simplifying execution and improving reliability of key tooling
+ - Added monitoring for paused jobs during failover to detect failures before developing into SEVs
+ - Corrected cost forecasting for 15 minute partitions, resulting in more accurate cost estimates by 75%
+ - Landed DR capacity sharing model for DB Ingestion, allowing net 0 DR capacity budget used for Sesame DR
+ - Organized quarterly internal DR Dress Rehearsals, stress testing tooling and documentation and following up on gaps
+ - Landed readiness monitoring for Synapse to avoid recovery delays due to destructive resize operations in Synapse clusters
+ - Led a month-long sprint to eliminate 99% of work for Multi-Region namespaces, prevening a major outage due to DR storms
+ - Validated capacity requirements for 10 batches of initial migrations, faciliting the split of the largest ads namespace,
+   critical to revenue, across 3 datacenter regions
+- **Capacity Roadmap Owner**
+ - Completed Synapse throughput analysis, enabling more accurate sizing of Synapse cluster
+ - Created foundational pillar and 3 year capacity vision, driving roadmap planning across multiple halves
+ - Guided design of quota enforcement across peers and stakeholders
+ - Influenced DB ingestion onboarding onto capacity planning tooling using a psuedo-namespace proposal
+ - Drove multi-half effort to integrate FBETL with Warehouse capacity planner, resulting in reduced over-ordering by 50+ racks, reduced
+   quarterly dev effort from 2-3 days to ~2 hours
+ - Designed and built bulk cluster automation tooling, facilitating migration to fully shared infrastructure, resulting in 5% reduced 
+   regional capacity variance in production and saving $20M annually in server capex
+ - Built distributed scheduler exclusion lock, preventing control plane duplication and reliability risks
+- **Better Engineering Lead**
+ - Build cross pod Service Excellence goal-tracking dashboard to track oncall load and progress toward service maturity levels over time
+ - Build team process for oncall improvement by tracking top oncall pain points and driving weekly root-cause analysis to
+   drive oncall improvement prioritization
+ - Refactored cluster automation to more flexibly add product-specfic components without increased complexity
+ - Reduced primary cli cold start times by 60-70% by reducing schema fetching and module loading overhead, saving 10s of hours of
+   developer time spent waiting on tooling
+ - Consistently reduced build/test flakiness by 30-40% every 6 months, cutting build times and accelerating development
+   on an ongoing basis
+ - Formed and led a teamwide SEV committee to review and prioritize followups from incidents, reducing the team's 
+   followup backlog age from an average of 150 days to 20 days and improving task completon behavior team-wide from 1 critical followup per week to 6.
+   Org-wide this contributed to a >85% task closure rate within 30 days for the most critical followps.
+ - Created Service Maturity Gap analysis and proposed milesone delivery schedule
+ - Built and rolled out OS stats-based health check framework to DIMS, the global ingestion control plane,
+   preventing overloaded hosts from impacting service reliabilty and providing an entry point to mitigate large SEVs
+   quickly.
+ - Reduced p99 latency by 50% on DIMS, and automated heap dump collection on FULLGC events
+ - Reduced build failures by 30% by eliminating a critical concurrency issue in a Python capacity library
+ - Removed a consistent pain point in C++ development by correcting the ephemeral build lifetime and extending the lifetime of test clusters
+ - Allow automated detection of regional drain tests, reducing critical notifications by 1 per week
+ - Modernize parameter storage for forecasting operator, preventing the breakage of 23 forecasting data pipelinesi
+ - Document and prioritize potential impact from cluster turnup improvements to align with AI enablement initiatives
+ - Led effort to reduce push failures from 70% to 5%, eliminating a major cause of oncall pain
+ - Drove C++ from a production readiness perspective launching with instance health checks, capacity attribution, continuous push,
+   and integration testing.
+> Tyler played a critical role in multiple SEV mitgations regardless of whether he was oncall. 
+> His dedication, prompt response, and generosity to offer help are deeply valued. -- Peer feedback
+- **Data Infra SEV Review Core Team**
+ - Plan and moderate weekly incident management review on an org-wide level
+ - Contribute to fruitful and productive incident management by driving followup conversations, collecting impact metrics,
+   and proposing improvements to testing and mitigation strategies across diverse services.
+ - Shared learnings from other teams to drive service improvement within Data Ingestion
+- **Led Config Safety Lockdown for Ingestion**
+ - Audited and narrowed down aread of highest impact and completed all safe config rollout work for Scribe Ingestion services, resulting in ~156 diffs
+   canaried per day.
+ - Audited configs for DIMS, created a task breakdown, and completed critical tasks, allowing peers to contribute effectively
+- **Release Maturity Improvements**
+ - Led end-of-half release improvement fixathon, using common health check framework to reduce release validation time by ~2 hours per check
+
+- **Technical Mentorship**
+ - Mentored three junior engineers or career growth and working through technical blockers.
+ - Coached four interns to successful completion of projects resulting in return offers, often through difficult pivots and
+   careful delivery of timely constructive feedback.
+ - Completed ramp-up as an Intern Director and shadowed summer Intern Directors through calibrations
+ - Unblocked 1MW of efficiency work through load-test automation and autoscaling
+> Tyler is core to the success of the DI PE Team. His curiosity about Meta systems and willingness to jump on 
+> any task has lent him extensive knowledge on just about every aspect of FbETL and related systems. This makes him an excellent advisor
+> on the teams' projects, as he's able to see how they fit into th data ingestion ecosystem and impact the system. Lately, I've appreciated his efforts
+> to improve how the team addresses SEV followups. We didn't have a good process and Tyler built one from scratch.
+
+
+
+
 ## [Buddy Platform](#buddy-platform)
 
-### Engineering Lead &mdash; February 2018 - Present
+### Engineering Lead &mdash; February 2018 - December 2018
 - Introduced REJI (Rapid Engineer Joy Index) a 0-5 quick assessment of three
   dimensions of job satisfaction during standup
 - Conduct weekly 1:1s with direct reports
