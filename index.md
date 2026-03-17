@@ -11,7 +11,7 @@ I've brought with me to work for coaching my teammates and allowing them
 to learn from each other. On teams, I try to lead by example, bring authenticity, sensitivity, and transparency to my colleagues, and frequently solicit feedback to improve our culture.
 
 ### Core Skills & Technologies
-- **Languages:** Python, C++, Java, JavaScript/TypeScript, PHP, Objective-C
+- **Languages:** Python, Rust, C++, Java, JavaScript/TypeScript, PHP/Hack, Objective-C
 - **Infrastructure & Systems:** Distributed Systems Architecture, Capacity Engineering, Disaster Recovery (DR) Automation, Kubernetes/Mesos, Apache Spark
 - **Reliability:** Service Excellence (SLOs/SLIs), Incident Management (SEV Review), Automated Canary/Rollout Strategies
 
