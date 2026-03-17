@@ -9,17 +9,17 @@ permalink: '/experience/'
 ### Production Engineer &mdash; January 2019 - Present
 
 #### Release Integrity Lead
-- Moved p90 binary age in production from 70 days to 5 days without a loss in production reliability
-- Designed and implmented SEF, a scenario framework to allow engineers to quickly and easily onboard new validation scenarios
-- Scaled deferred correctness validations; checksum, partition latency, delta merge, across 4 products
-- Automatically blocked release of a regression resulting in previously undetectable silent data corruption
-- Designed and built Fulcrum, a solver layer for SEF, shifting 2% of traffic from overutilized clusters to underutilized clusters and accelerating validation signal of releases
+- Reduced p90 production binary age from 70 days to 5 days while maintaining perfect production reliability.
+- Prevented previously undetectable silent data corruption by automatically blocking a regression release.
+- Accelerated release validation signals and improved cluster efficiency by designing and building Fulcrum, a solver layer for SEF that dynamically shifted 2% of traffic from overutilized to underutilized clusters.
+- Scaled deferred correctness validations (checksum, partition latency, delta merge) across 4 products.
+- Designed and implemented SEF, a scenario framework enabling engineers to rapidly and easily onboard new validation scenarios.
 
 #### Global Tetris and Disaster Recovery Lead
-- Leveraged automated workflow to increase DR storm cadence from quarterly to weekly
-- Fully-automated disaster workflow by developing and deploying a location-availability aware regional PinStore using Manifold blob storage
-- Reduced end-to-end failover time from 80 minutes to 5 minutes using a modernized workflow implementation
-- Reduced excess backfill by 240 PB through a colloboration with replication team
+- Eliminated 240 PB of excess backfill by collaborating with the replication team.
+- Reduced end-to-end failover time from 80 minutes to 5 minutes using a modernized workflow implementation.
+- Increased DR storm cadence from quarterly to weekly by leveraging automated workflows.
+- Fully automated disaster workflow by developing and deploying a location-availability aware regional PinStore using Manifold blob storage.
 - Prevented a major outage due to DR storms by leading a month-long sprint to eliminate 99% of work for Multi-Region namespaces.
 - Reduced SLO misses from DR drills to 0 (from 4 per half) and reduced unneeded work for Multi-Region drain/undrain by 53-78%.
 - Designed and built a symmetric API for DR execution, simplifying execution and improving reliability of key tooling; landed a Multi-Region Aware Analysis Pipeline for one-command DR execution.

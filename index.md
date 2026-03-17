@@ -10,6 +10,8 @@ Through my work with [TEALS](https://tealsk12.org), I've learned methods that
 I've brought with me to work for coaching my teammates and allowing them
 to learn from each other. On teams, I try to lead by example, bring authenticity, sensitivity, and transparency to my colleagues, and frequently solicit feedback to improve our culture.
 
+**[Connect with me on LinkedIn](https://www.linkedin.com/in/tyler-vann-campbell-54314b2)**
+
 ### Core Skills & Technologies
 - **Languages:** Python, Rust, C++, Java, JavaScript/TypeScript, PHP/Hack, Objective-C
 - **Infrastructure & Systems:** Distributed Systems Architecture, Capacity Engineering, Disaster Recovery (DR) Automation, Kubernetes/Mesos, Apache Spark
