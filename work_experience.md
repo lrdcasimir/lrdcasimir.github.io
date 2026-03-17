@@ -13,6 +13,7 @@ permalink: '/experience/'
 - Designed and implmented SEF, a scenario framework to allow engineers to quickly and easily onboard new validation scenarios
 - Scaled deferred correctness validations; checksum, partition latency, delta merge, across 4 products
 - Automatically blocked release of a regression resulting in previously undetectable silent data corruption
+- Designed and built Fulcrum, a solver layer for SEF, shifting 2% of traffic from overutilized clusters to underutilized clusters and accelerating validation signal of releases
 
 #### Global Tetris and Disaster Recovery Lead
 - Leveraged automated workflow to increase DR storm cadence from quarterly to weekly
