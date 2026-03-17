@@ -8,7 +8,17 @@ permalink: '/experience/'
 
 ### Production Engineer &mdash; January 2019 - Present
 
+#### Release Integrity Lead
+- Moved p90 binary age in production from 70 days to 5 days without a loss in production reliability
+- Designed and implmented SEF, a scenario framework to allow engineers to quickly and easily onboard new validation scenarios
+- Scaled deferred correctness validations; checksum, partition latency, delta merge, across 4 products
+- Automatically blocked release of a regression resulting in previously undetectable silent data corruption
+
 #### Global Tetris and Disaster Recovery Lead
+- Leveraged automated workflow to increase DR storm cadence from quarterly to weekly
+- Fully-automated disaster workflow by developing and deploying a location-availability aware regional PinStore using Manifold blob storage
+- Reduced end-to-end failover time from 80 minutes to 5 minutes using a modernized workflow implementation
+- Reduced excess backfill by 240 PB through a colloboration with replication team
 - Prevented a major outage due to DR storms by leading a month-long sprint to eliminate 99% of work for Multi-Region namespaces.
 - Reduced SLO misses from DR drills to 0 (from 4 per half) and reduced unneeded work for Multi-Region drain/undrain by 53-78%.
 - Designed and built a symmetric API for DR execution, simplifying execution and improving reliability of key tooling; landed a Multi-Region Aware Analysis Pipeline for one-command DR execution.
