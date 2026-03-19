@@ -39,7 +39,7 @@ permalink: '/experience/'
 
 #### Better Engineering Lead
 - Contributed to a >85% task closure rate within 30 days org-wide by forming and leading a teamwide SEV committee, reducing the team's followup backlog age from an average of 150 days to 20 days.
-- Saved 10s of hours of developer time by reducing primary CLI cold start times by 60-70% via reduced schema fetching and module loading overhead.
+- Saved hundreds of engineering hours by reducing primary CLI cold start times by 60-70% via reduced schema fetching and module loading overhead.
 - Consistently cut build/test flakiness by 30-40% every 6 months, accelerating development on an ongoing basis.
 - Built and rolled out OS stats-based health check framework to DIMS (global ingestion control plane), preventing overloaded hosts from impacting service reliability.
 - Reduced p99 latency by 50% on DIMS, and automated heap dump collection on FULLGC events.
@@ -48,7 +48,7 @@ permalink: '/experience/'
 - Removed a consistent pain point in C++ development by correcting ephemeral build lifetime and extending test cluster lifetimes.
 - Drove C++ from a production readiness perspective, launching with instance health checks, capacity attribution, continuous push, and integration testing.
 
-> "Tyler played a critical role in multiple SEV mitgations regardless of whether he was oncall. His dedication, prompt response, and generosity to offer help are deeply valued." -- Peer feedback
+> "Tyler played a critical role in multiple SEV mitigations regardless of whether he was oncall. His dedication, prompt response, and generosity to offer help are deeply valued." -- Peer feedback
 
 #### Data Infra SEV Review Core Team & Safety Lockdown
 - Planned and moderated weekly incident management reviews on an org-wide level, collecting impact metrics and proposing improvements across diverse services.
@@ -62,25 +62,25 @@ permalink: '/experience/'
 ## [Buddy Platform](#buddy-platform)
 
 ### Engineering Lead &mdash; February 2018 - December 2018
-- Introduced REJI (Rapid Engineer Joy Index) a 0-5 quick assessment of three dimensions of job satisfaction during standup.
-- Lead design, development and deployment of Feeds, a portfolio concept to allow grouping and basic aggregation of energy data to support three-phase circuit monitoring using Elasticsearch.
-- Design and implement graph database to implement portfolio service to flexibly handle arbitrary entity depth, ACL and role-based security with inheritance.
-- Design ingestion pipeline composed of four independent dropwizard microservices, deployed on Marathon/Mesos and communicating using Azure Event Hubs and Avro serialization.
+- Introduced REJI (Rapid Engineer Joy Index), a 0-5 quick assessment of three dimensions of job satisfaction during standup.
+- Led design, development, and deployment of Feeds, a portfolio concept to allow grouping and basic aggregation of energy data to support three-phase circuit monitoring using Elasticsearch.
+- Designed and implemented a graph database to implement portfolio service to flexibly handle arbitrary entity depth, ACL and role-based security with inheritance.
+- Designed ingestion pipeline composed of four independent dropwizard microservices, deployed on Marathon/Mesos and communicating using Azure Event Hubs and Avro serialization.
 
 ### Senior Software Engineer &mdash; Jan 2014 - Feb 2018
-- Refactor time series database architecture into polymorphic implementations.
-- Architect and manage pluggable data processing pipeline based on the Apache Spark stack.
+- Refactored time series database architecture into polymorphic implementations.
+- Architected and managed pluggable data processing pipeline based on the Apache Spark stack.
 - Designed and implemented CoreOS system architecture using concepts from immutable infrastructure to deliver rapid deployments and rollbacks and reduce Azure spend 30%.
 - Designed and implemented DataSource/DataSink pipeline for creating composable data transformation objects that can run across computing platforms.
 - Migrated MongoDB cluster to LVM/LUKS/RAID-10 configuration backed by Azure premium blob storage; changes merged into upstream Chef 12.
-- Redesigned telemetry architecture using an asynchronous stream architecture, allowing telemetry manipulation, filtering and recording to happen in parallel.
+- Redesigned telemetry architecture using an asynchronous stream architecture, allowing telemetry manipulation, filtering, and recording to happen in parallel.
 - Architected and implemented extensible state machine model of push notification registration and delivery transparently spanning Azure Notification Hubs and Amazon SNS.
 
 ## [Amazon.com](#amazoncom)
 ### Web Development Engineer, Wireless CX Team &mdash; Sept 2011 – Dec 2014
 - Reduced perceived latency of UI actions by batching together AJAX requests and sending them invisibly while performing intermediate price computations on the browser.
-- Redesign wireless plans and options page to use reusable JSP taglib components and an extensible decorator pattern.
-- Converted all PUC pages to DataProvider architecture, decoupling UI from dependent services by injecting static data through spring.
+- Redesigned wireless plans and options page to use reusable JSP taglib components and an extensible decorator pattern.
+- Converted all PUC pages to DataProvider architecture, decoupling UI from dependent services by injecting static data through Spring.
 - Managed migration from a BDB artifact for localized strings to Localization Metadata Service, reducing the time needed to push string revisions from 2 weeks to 15 minutes.
 - Increased code coverage of key library packages (AlohaAppsLib and AlohaPUCLib) by 20% and 15% respectively.
 - Migrated amazonwireless.com to amazon.com, creating a unified shopping experience for contract phones on the retail website.
@@ -88,14 +88,14 @@ permalink: '/experience/'
 
 ## [Health Plan Services](#health-plan-services)
 ### Senior Web Developer &mdash; Sept 2009 – Sept 2011
-- Lead architecture, design, and development of initial implementation of a mobile quoting application for iPad and iPhone using XCode3 and Cocoa Touch.
-- Foster an organizational push for test-driven development and continuous integration using PHPUnit and CruiseControl.
-- Together with two other senior developers, design and architect a modular and extensible enterprise enrollment system used by Cigna, Beazley and Freelancers Union.
-- Lead architecture, design, implementation, and testing of an event-driven workflow engine (SINEWE) for tracking and restoring user state across web interfaces based on principles observed in Spring Web Flow and BPEL.
+- Led architecture, design, and development of initial implementation of a mobile quoting application for iPad and iPhone using XCode3 and Cocoa Touch.
+- Drove an organizational push for test-driven development and continuous integration using PHPUnit and CruiseControl.
+- Together with two other senior developers, designed and architected a modular and extensible enterprise enrollment system used by Cigna, Beazley, and Freelancers Union.
+- Led architecture, design, implementation, and testing of an event-driven workflow engine (SINEWE) for tracking and restoring user state across web interfaces based on principles observed in Spring Web Flow and BPEL.
 - Led design and development of a database configurable PHP controller class to produce a daily feed of TIFF images retrieved from an internal Stellent server for Humana.
 
 ## [Verizon Business](#verizon-business)
 ### Software Systems Engineer IV &mdash; Jan 2009 - Sept 2009
-- Prepared the IPM suite for enterprise deployment by implementing input validation classes and query parameterization using PHP and MySQL on an existing code base of more than 600,000 lines and supporting 13,000 active users.
+- Prepared the IPM suite for enterprise deployment by implementing input validation classes and query parameterization using PHP and MySQL on an existing code base of more than 600,000 lines supporting 13,000 active users.
 - Designed and implemented session-based metadata caching layer to store template specific data on web servers, providing speed improvements of 10-15 seconds.
-- Employed document revisioning classes to create a living Business Requirement document that provides document workflow and traceability.
+- Employed document revisioning classes to create a living Business Requirement document providing document workflow and traceability.
