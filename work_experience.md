@@ -9,7 +9,7 @@ permalink: '/experience/'
 ### Production Engineer &mdash; January 2019 - Present
 
 #### Release Integrity Lead
-- Reduced p90 production binary age from 70 days to 5 days while maintaining perfect production reliability.
+- Reduced p90 production binary age from 70 days to 5 days with zero SLO misses and a sub-10% corrective action ratio throughout.
 - Prevented previously undetectable silent data corruption by automatically blocking a regression release.
 - Accelerated release validation signals and improved cluster efficiency by designing and building Fulcrum, a solver layer for SEF that dynamically shifted 2% of traffic from overutilized to underutilized clusters.
 - Scaled deferred correctness validations (checksum, partition latency, delta merge) across 4 products.
