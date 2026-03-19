@@ -34,3 +34,11 @@ gem "jekyll-swiss", "~> 1.0"
 gem "webrick", "~> 1.8"
 
 gem "kramdown-parser-gfm", "~> 1.1"
+
+gem "csv", "~> 3.3"
+
+gem "base64", "~> 0.3.0"
+
+gem "bigdecimal", "~> 4.0"
+
+gem "erb", "~> 6.0"
