@@ -42,3 +42,5 @@ gem "base64", "~> 0.3.0"
 gem "bigdecimal", "~> 4.0"
 
 gem "erb", "~> 6.0"
+gem "jekyll-remote-theme"
+gem "jekyll-seo-tag"
