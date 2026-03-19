@@ -1,44 +1,177 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Site
+repository: lrdcasimir/lrdcasimir.github.io
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: Tyler Vann-Campbell
+# Content configuration version
+version: 2
+
+# Personal info
+name: Tyler Vann-Campbell
+title: Production Engineer
 email: tyler.v@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  I build software that I would want to use myself.
-  I mentor future engineers and digital citizens in the classroom.
-  I foster growth in other engineers by applying coaching techniques from my classroom to my own team.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-social_username: lrdcasimir
-github_username:  lrdcasimir
+website: https://lrdcasimir.github.io
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+twitter_username: lrdcasimir
+github_username: lrdcasimir
+linkedin_username: tyler-vann-campbell-54314b2
+
+# About Section
+about_profile_image: assets/IMG_0019.jpg
+about_content: |
+  I'm a Production Engineer with over a decade of experience building and scaling large-scale infrastructure, disaster recovery systems, and release engineering tooling. At Meta I've led efforts saving $20M annually in server capex, reduced end-to-end failover times from 80 minutes to 5 minutes, and driven release engineering practices that cut p90 binary age in production from 70 days to 5 days — all while maintaining reliability at fleet scale.
+
+  Through my work with [TEALS](https://tealsk12.org) I've developed coaching techniques I bring directly to my engineering teams. I lead by example, with authenticity and transparency, and frequently solicit feedback from the people I support.
+
+  **Core Skills & Technologies**
+  - **Languages:** Python, Rust, C++, Java, JavaScript/TypeScript, PHP/Hack, Objective-C
+  - **Infrastructure & Systems:** Distributed Systems Architecture, Capacity Engineering, Disaster Recovery Automation, Kubernetes/Mesos, Apache Spark
+  - **Reliability:** Service Excellence (SLOs/SLIs), Incident Management, Automated Canary/Rollout Strategies, Progressive Delivery
+
+content:
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: Meta Platforms
+        sub_title: Production Engineer
+        caption: January 2019 - Present
+        description: |
+          **Release Integrity Lead**
+          - Reduced p90 production binary age from 70 days to 5 days while maintaining perfect production reliability.
+          - Prevented previously undetectable silent data corruption by automatically blocking a regression release.
+          - Accelerated release validation signals and improved cluster efficiency by designing and building Fulcrum, a solver layer for SEF that dynamically shifted 2% of traffic from overutilized to underutilized clusters.
+          - Scaled deferred correctness validations (checksum, partition latency, delta merge) across 4 products.
+          - Designed and implemented SEF, a scenario framework enabling engineers to rapidly and easily onboard new validation scenarios.
+
+          **Global Tetris and Disaster Recovery Lead**
+          - Eliminated 240 PB of excess backfill by collaborating with the replication team.
+          - Reduced end-to-end failover time from 80 minutes to 5 minutes using a modernized workflow implementation.
+          - Increased DR storm cadence from quarterly to weekly by leveraging automated workflows.
+          - Fully automated disaster workflow by developing and deploying a location-availability aware regional PinStore using Manifold blob storage.
+          - Prevented a major outage due to DR storms by leading a month-long sprint to eliminate 99% of work for Multi-Region namespaces.
+          - Reduced SLO misses from DR drills to 0 (from 4 per half) and reduced unneeded work for Multi-Region drain/undrain by 53-78%.
+          - Designed and built a symmetric API for DR execution, simplifying execution and improving reliability of key tooling.
+          - Validated capacity requirements for 10 batches of initial migrations, facilitating the split of the largest ads namespace (critical to revenue) across 3 datacenter regions.
+          - Corrected cost forecasting for 15-minute partitions, resulting in 75% more accurate cost estimates.
+
+          **Capacity Roadmap Owner**
+          - Saved $20M annually in server capex and reduced regional capacity variance by 5% by designing and building bulk cluster automation tooling.
+          - Reduced over-ordering by 50+ racks and cut quarterly dev effort from 2-3 days to ~2 hours by integrating FBETL with Warehouse capacity planner.
+          - Created foundational pillar and 3-year capacity vision, driving roadmap planning across multiple halves.
+          - Built distributed scheduler exclusion lock, preventing control plane duplication and reliability risks.
+
+          **Better Engineering Lead**
+          - Contributed to a >85% task closure rate within 30 days org-wide by forming and leading a teamwide SEV committee, reducing the followup backlog age from 150 days to 20 days.
+          - Saved hundreds of engineering hours by reducing primary CLI cold start times by 60-70%.
+          - Consistently cut build/test flakiness by 30-40% every 6 months.
+          - Built and rolled out OS stats-based health check framework to DIMS (global ingestion control plane).
+          - Reduced p99 latency by 50% on DIMS and automated heap dump collection on FULLGC events.
+          - Eliminated a major cause of oncall pain by reducing push failures from 70% to 5%.
+          - Drove C++ from a production readiness perspective, launching with instance health checks, capacity attribution, continuous push, and integration testing.
+
+          > "Tyler played a critical role in multiple SEV mitigations regardless of whether he was oncall. His dedication, prompt response, and generosity to offer help are deeply valued." — Peer feedback
+
+          > "Tyler is core to the success of the DI PE Team. His curiosity about Meta systems and willingness to jump on any task has lent him extensive knowledge on just about every aspect of FbETL and related systems." — Peer feedback
+
+      - layout: left
+        title: Buddy Platform
+        sub_title: Engineering Lead
+        caption: February 2018 - December 2018
+        description: |
+          - Introduced REJI (Rapid Engineer Joy Index), a 0-5 quick assessment of three dimensions of job satisfaction during standup.
+          - Led design, development, and deployment of Feeds, a portfolio concept to support three-phase circuit monitoring using Elasticsearch.
+          - Designed and implemented a graph database for the portfolio service supporting arbitrary entity depth, ACL, and role-based security with inheritance.
+          - Designed ingestion pipeline of four independent dropwizard microservices on Marathon/Mesos using Azure Event Hubs and Avro serialization.
+
+      - layout: left
+        title: Buddy Platform
+        sub_title: Senior Software Engineer
+        caption: January 2014 - February 2018
+        description: |
+          - Refactored time series database architecture into polymorphic implementations.
+          - Architected and managed pluggable data processing pipeline based on the Apache Spark stack.
+          - Designed and implemented CoreOS system architecture using immutable infrastructure principles, delivering rapid deployments and rollbacks and reducing Azure spend 30%.
+          - Redesigned telemetry architecture using an asynchronous stream model, allowing manipulation, filtering, and recording to happen in parallel.
+          - Architected extensible state machine model of push notification delivery spanning Azure Notification Hubs and Amazon SNS.
+          - Migrated MongoDB cluster to LVM/LUKS/RAID-10 backed by Azure premium blob storage; changes merged into upstream Chef 12.
+
+      - layout: left
+        title: Amazon.com
+        sub_title: Web Development Engineer, Wireless CX Team
+        caption: September 2011 - December 2014
+        description: |
+          - Reduced perceived latency of UI actions by batching AJAX requests and performing intermediate price computations on the browser.
+          - Redesigned wireless plans and options page to use reusable JSP taglib components and an extensible decorator pattern.
+          - Converted all PUC pages to DataProvider architecture, decoupling UI from dependent services.
+          - Managed migration from BDB to Localization Metadata Service, reducing string revision time from 2 weeks to 15 minutes.
+          - Migrated amazonwireless.com to amazon.com, creating a unified shopping experience for contract phones.
+
+      - layout: left
+        title: Health Plan Services
+        sub_title: Senior Web Developer
+        caption: September 2009 - September 2011
+        description: |
+          - Led architecture, design, and development of a mobile quoting application for iPad and iPhone using XCode3 and Cocoa Touch.
+          - Drove an organizational push for TDD and continuous integration using PHPUnit and CruiseControl.
+          - Designed and architected a modular enterprise enrollment system used by Cigna, Beazley, and Freelancers Union.
+          - Led architecture and testing of SINEWE, an event-driven workflow engine for tracking user state across web interfaces.
+
+      - layout: left
+        title: Verizon Business
+        sub_title: Software Systems Engineer IV
+        caption: January 2009 - September 2009
+        description: |
+          - Prepared the IPM suite for enterprise deployment via input validation and query parameterization across 600,000+ lines of code supporting 13,000 active users.
+          - Designed and implemented session-based metadata caching layer, providing speed improvements of 10-15 seconds on large datasets.
+
+  - title: Education
+    layout: list
+    content:
+      - layout: top-left
+        title: University of South Florida
+        sub_title: B.S. Information Technology
+        description: |
+          **Research Software Developer** (2009 - 2010)
+          - Developed a framework for building and configuring psychometric tests dynamically using XML configuration files.
+          - Applied State, Mediator, and KVC patterns to encapsulate test trials and decouple views from controllers in iOS.
+          - Constructed a performance testing framework with OCUnit to ensure response latencies were recorded with strict accuracy.
+
+  - title: Volunteering
+    layout: list
+    content:
+      - layout: left
+        title: TEALS
+        sub_title: AP CS TA
+        caption: 2016 - 2017
+        description: |
+          Volunteer TA at [Cascade High School](https://www.everettsd.org/cascade) in Everett, WA. Enriched the code.org CSP curriculum with unplugged activities and additional material, and covered the CS A curriculum mid-year to support a student cohort through a staffing gap.
+
+      - layout: left
+        title: Seattle App Academy
+        sub_title: Coach
+        caption: 2014 - 2017
+        description: |
+          After-school coach teaching kids to build games with Kodu and TouchDevelop, then expanding to hardware workshops with Arduino and Adafruit Trinket. Developed and delivered a Sonic Pi music composition curriculum in partnership with local Girl Scout troops.
+
+# Footer
+footer_show_references: false
 
 # Build settings
-markdown: kramdown
-theme: jekyll-swiss
-theme_color: blue
-plugins:
-  - jekyll-feed
+remote_theme: sproogen/modern-resume-theme
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+sass:
+  sass_dir: _sass
+  style: compressed
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-remote-theme
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
