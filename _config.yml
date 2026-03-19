@@ -19,7 +19,7 @@ github_username: lrdcasimir
 linkedin_username: tyler-vann-campbell-54314b2
 
 # About Section
-about_profile_image: assets/IMG_0019.jpg
+about_profile_image: assets/profile.jpg
 about_content: |
   I'm a Production Engineer with over a decade of experience building and scaling large-scale infrastructure, disaster recovery systems, and release engineering tooling. At Meta I've led efforts saving $20M annually in server capex, reduced end-to-end failover times from 80 minutes to 5 minutes, and driven release engineering practices that cut p90 binary age in production from 70 days to 5 days — all while maintaining reliability at fleet scale.
 
